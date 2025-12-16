@@ -11,9 +11,10 @@ import java.time.LocalDateTime;
                 @UniqueConstraint(columnNames = {"post_id", "user_id"})
         }
 )
-@Data
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
+@Getter
 public class Like {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

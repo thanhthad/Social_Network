@@ -6,9 +6,10 @@ import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "comments")
-@Data
 @NoArgsConstructor
 @AllArgsConstructor
+@Setter
+@Getter
 public class Comment {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
