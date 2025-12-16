@@ -14,7 +14,6 @@ public class Post {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    // FK user_id
     @ManyToOne
     @JoinColumn(name = "user_id", nullable = false)
     private User user;
